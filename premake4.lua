@@ -24,6 +24,7 @@ configuration 'macosx'
 	targetextension '.so'
 configuration 'linux'
 	links { 'lua5.1-c++' }
+	includedirs { '/usr/include/lua5.1' }
 configuration 'windows'
 	links { "lua5.1" }
 configuration { '*' }
