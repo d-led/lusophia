@@ -38,7 +38,7 @@ ifeq ($(config),debug)
   CXXFLAGS  += $(CFLAGS) 
   LDFLAGS   += -L.. -shared
   RESFLAGS  += $(DEFINES) $(INCLUDES) 
-  LIBS      += -llua5.1-c++
+  LIBS      += -llua5.1-c++ -lpthread
   LDDEPS    += 
   LINKCMD    = $(CC) -o $(TARGET) $(OBJECTS) $(RESOURCES) $(ARCH) $(LIBS) $(LDFLAGS)
   define PREBUILDCMDS
@@ -60,7 +60,7 @@ ifeq ($(config),release)
   CXXFLAGS  += $(CFLAGS) 
   LDFLAGS   += -L.. -s -shared
   RESFLAGS  += $(DEFINES) $(INCLUDES) 
-  LIBS      += -llua5.1-c++
+  LIBS      += -llua5.1-c++ -lpthread
   LDDEPS    += 
   LINKCMD    = $(CC) -o $(TARGET) $(OBJECTS) $(RESOURCES) $(ARCH) $(LIBS) $(LDFLAGS)
   define PREBUILDCMDS

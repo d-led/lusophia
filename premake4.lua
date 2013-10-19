@@ -23,7 +23,7 @@ configuration 'macosx'
 	links { 'lua' }
 	targetextension '.so'
 configuration 'linux'
-	links { 'lua5.1-c++' }
+	links { 'lua5.1-c++' , 'pthread' }
 	includedirs { '/usr/include/lua5.1' }
 configuration 'windows'
 	links { "lua5.1" }
