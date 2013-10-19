@@ -1,0 +1,9 @@
+[submodule "sophia"]
+	path = sophia
+	url = http://github.com/pmwkaa/sophia.git
+[submodule "lua-sophia"]
+	path = lua-sophia
+	url = https://github.com/mkottman/lua-sophia.git
+[submodule "premake"]
+	path = premake
+	url = https://github.com/d-led/premake-meta-cpp.git
